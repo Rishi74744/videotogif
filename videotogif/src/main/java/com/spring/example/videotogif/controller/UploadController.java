@@ -29,7 +29,7 @@ public class UploadController {
 			@RequestParam("repeatAtEnd") boolean repeatAtEnd) throws IOException {
 		File videoFile = new File(location + "/" + System.currentTimeMillis() + ".mp4");
 		multipartFile.transferTo(videoFile);
-		log.info("Saved File To {} ", videoFile.getAbsolutePath());
+		log.info("Saved File To {Files Location} : ", videoFile.getAbsolutePath());
 		return "";
 	}
 
